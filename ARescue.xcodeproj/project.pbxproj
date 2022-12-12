@@ -3,155 +3,209 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E51386029473DD8006AD2C6 /* ARescueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E51385F29473DD8006AD2C6 /* ARescueApp.swift */; };
-		4E51386229473DD8006AD2C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E51386129473DD8006AD2C6 /* ContentView.swift */; };
-		4E51386429473DD9006AD2C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E51386329473DD9006AD2C6 /* Assets.xcassets */; };
-		4E51386729473DD9006AD2C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E51386629473DD9006AD2C6 /* Preview Assets.xcassets */; };
+		4E517C8E2947298E00B7D035 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9162EEDA24A38CE7005D7F0B /* MultipeerConnectivity.framework */; };
+		4E517C912947299000B7D035 /* NearbyInteraction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913DB5C824A36523009BEC46 /* NearbyInteraction.framework */; };
+		913DB5B924A36502009BEC46 /* ARescue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913DB5B824A36502009BEC46 /* ARescue.swift */; };
+		913DB5BB24A36502009BEC46 /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913DB5BA24A36502009BEC46 /* NearbyView.swift */; };
+		913DB5BD24A3650C009BEC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913DB5BC24A3650C009BEC46 /* Assets.xcassets */; };
+		913DB5C024A3650C009BEC46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913DB5BF24A3650C009BEC46 /* Preview Assets.xcassets */; };
+		9162EED524A38447005D7F0B /* CercaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162EED424A38446005D7F0B /* CercaViewModel.swift */; };
+		9162EED724A385A5005D7F0B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162EED624A385A5005D7F0B /* ErrorView.swift */; };
+		9162EED924A386B6005D7F0B /* UserInterface.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9162EED824A386B6005D7F0B /* UserInterface.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E51385C29473DD8006AD2C6 /* ARescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E51385F29473DD8006AD2C6 /* ARescueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARescueApp.swift; sourceTree = "<group>"; };
-		4E51386129473DD8006AD2C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4E51386329473DD9006AD2C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4E51386629473DD9006AD2C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		913DB5B524A36502009BEC46 /* ARescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		913DB5B824A36502009BEC46 /* ARescue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARescue.swift; sourceTree = "<group>"; };
+		913DB5BA24A36502009BEC46 /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		913DB5BC24A3650C009BEC46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		913DB5BF24A3650C009BEC46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		913DB5C124A3650C009BEC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		913DB5C824A36523009BEC46 /* NearbyInteraction.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NearbyInteraction.framework; path = System/Library/Frameworks/NearbyInteraction.framework; sourceTree = SDKROOT; };
+		9162EED424A38446005D7F0B /* CercaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CercaViewModel.swift; sourceTree = "<group>"; };
+		9162EED624A385A5005D7F0B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		9162EED824A386B6005D7F0B /* UserInterface.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInterface.xcassets; sourceTree = "<group>"; };
+		9162EEDA24A38CE7005D7F0B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E51385929473DD8006AD2C6 /* Frameworks */ = {
+		913DB5B224A36502009BEC46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E517C912947299000B7D035 /* NearbyInteraction.framework in Frameworks */,
+				4E517C8E2947298E00B7D035 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E51385329473DD8006AD2C6 = {
+		913DB5AC24A36502009BEC46 = {
 			isa = PBXGroup;
 			children = (
-				4E51385E29473DD8006AD2C6 /* ARescue */,
-				4E51385D29473DD8006AD2C6 /* Products */,
+				913DB5B724A36502009BEC46 /* ARescue */,
+				913DB5B624A36502009BEC46 /* Products */,
+				913DB5C724A36523009BEC46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4E51385D29473DD8006AD2C6 /* Products */ = {
+		913DB5B624A36502009BEC46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E51385C29473DD8006AD2C6 /* ARescue.app */,
+				913DB5B524A36502009BEC46 /* ARescue.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E51385E29473DD8006AD2C6 /* ARescue */ = {
+		913DB5B724A36502009BEC46 /* ARescue */ = {
 			isa = PBXGroup;
 			children = (
-				4E51385F29473DD8006AD2C6 /* ARescueApp.swift */,
-				4E51386129473DD8006AD2C6 /* ContentView.swift */,
-				4E51386329473DD9006AD2C6 /* Assets.xcassets */,
-				4E51386529473DD9006AD2C6 /* Preview Content */,
+				913DB5C124A3650C009BEC46 /* Info.plist */,
+				913DB5B824A36502009BEC46 /* ARescue.swift */,
+				9162EED324A383D3005D7F0B /* Resources */,
+				9162EED224A383CC005D7F0B /* Views */,
+				9162EED124A383C1005D7F0B /* ViewModels */,
+				913DB5BE24A3650C009BEC46 /* Preview Content */,
 			);
 			path = ARescue;
 			sourceTree = "<group>";
 		};
-		4E51386529473DD9006AD2C6 /* Preview Content */ = {
+		913DB5BE24A3650C009BEC46 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				4E51386629473DD9006AD2C6 /* Preview Assets.xcassets */,
+				913DB5BF24A3650C009BEC46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		913DB5C724A36523009BEC46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9162EEDA24A38CE7005D7F0B /* MultipeerConnectivity.framework */,
+				913DB5C824A36523009BEC46 /* NearbyInteraction.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9162EED124A383C1005D7F0B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9162EED424A38446005D7F0B /* CercaViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9162EED224A383CC005D7F0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				913DB5BA24A36502009BEC46 /* NearbyView.swift */,
+				9162EED624A385A5005D7F0B /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9162EED324A383D3005D7F0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				913DB5BC24A3650C009BEC46 /* Assets.xcassets */,
+				9162EED824A386B6005D7F0B /* UserInterface.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E51385B29473DD8006AD2C6 /* ARescue */ = {
+		913DB5B424A36502009BEC46 /* ARescue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E51386A29473DD9006AD2C6 /* Build configuration list for PBXNativeTarget "ARescue" */;
+			buildConfigurationList = 913DB5C424A3650C009BEC46 /* Build configuration list for PBXNativeTarget "ARescue" */;
 			buildPhases = (
-				4E51385829473DD8006AD2C6 /* Sources */,
-				4E51385929473DD8006AD2C6 /* Frameworks */,
-				4E51385A29473DD8006AD2C6 /* Resources */,
+				913DB5B124A36502009BEC46 /* Sources */,
+				913DB5B224A36502009BEC46 /* Frameworks */,
+				913DB5B324A36502009BEC46 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ARescue;
-			productName = ARescue;
-			productReference = 4E51385C29473DD8006AD2C6 /* ARescue.app */;
+			productName = Cerca;
+			productReference = 913DB5B524A36502009BEC46 /* ARescue.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4E51385429473DD8006AD2C6 /* Project object */ = {
+		913DB5AD24A36502009BEC46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					4E51385B29473DD8006AD2C6 = {
-						CreatedOnToolsVersion = 14.1;
+					913DB5B424A36502009BEC46 = {
+						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
-			buildConfigurationList = 4E51385729473DD8006AD2C6 /* Build configuration list for PBXProject "ARescue" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 913DB5B024A36502009BEC46 /* Build configuration list for PBXProject "ARescue" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 4E51385329473DD8006AD2C6;
-			productRefGroup = 4E51385D29473DD8006AD2C6 /* Products */;
+			mainGroup = 913DB5AC24A36502009BEC46;
+			productRefGroup = 913DB5B624A36502009BEC46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E51385B29473DD8006AD2C6 /* ARescue */,
+				913DB5B424A36502009BEC46 /* ARescue */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4E51385A29473DD8006AD2C6 /* Resources */ = {
+		913DB5B324A36502009BEC46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E51386729473DD9006AD2C6 /* Preview Assets.xcassets in Resources */,
-				4E51386429473DD9006AD2C6 /* Assets.xcassets in Resources */,
+				913DB5C024A3650C009BEC46 /* Preview Assets.xcassets in Resources */,
+				9162EED924A386B6005D7F0B /* UserInterface.xcassets in Resources */,
+				913DB5BD24A3650C009BEC46 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4E51385829473DD8006AD2C6 /* Sources */ = {
+		913DB5B124A36502009BEC46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E51386229473DD8006AD2C6 /* ContentView.swift in Sources */,
-				4E51386029473DD8006AD2C6 /* ARescueApp.swift in Sources */,
+				913DB5BB24A36502009BEC46 /* NearbyView.swift in Sources */,
+				913DB5B924A36502009BEC46 /* ARescue.swift in Sources */,
+				9162EED524A38447005D7F0B /* CercaViewModel.swift in Sources */,
+				9162EED724A385A5005D7F0B /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4E51386829473DD9006AD2C6 /* Debug */ = {
+		913DB5C224A3650C009BEC46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -195,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -205,13 +259,14 @@
 			};
 			name = Debug;
 		};
-		4E51386929473DD9006AD2C6 /* Release */ = {
+		913DB5C324A3650C009BEC46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -249,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -259,59 +314,45 @@
 			};
 			name = Release;
 		};
-		4E51386B29473DD9006AD2C6 /* Debug */ = {
+		913DB5C524A3650C009BEC46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARescue/Preview Content\"";
 				DEVELOPMENT_TEAM = J566499KXW;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = ARescue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.gomma.ARescue.ARescue;
+				PRODUCT_BUNDLE_IDENTIFIER = io.gomma.ARescue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4E51386C29473DD9006AD2C6 /* Release */ = {
+		913DB5C624A3650C009BEC46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARescue/Preview Content\"";
 				DEVELOPMENT_TEAM = J566499KXW;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = ARescue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.gomma.ARescue.ARescue;
+				PRODUCT_BUNDLE_IDENTIFIER = io.gomma.ARescue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,25 +361,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E51385729473DD8006AD2C6 /* Build configuration list for PBXProject "ARescue" */ = {
+		913DB5B024A36502009BEC46 /* Build configuration list for PBXProject "ARescue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E51386829473DD9006AD2C6 /* Debug */,
-				4E51386929473DD9006AD2C6 /* Release */,
+				913DB5C224A3650C009BEC46 /* Debug */,
+				913DB5C324A3650C009BEC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E51386A29473DD9006AD2C6 /* Build configuration list for PBXNativeTarget "ARescue" */ = {
+		913DB5C424A3650C009BEC46 /* Build configuration list for PBXNativeTarget "ARescue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E51386B29473DD9006AD2C6 /* Debug */,
-				4E51386C29473DD9006AD2C6 /* Release */,
+				913DB5C524A3650C009BEC46 /* Debug */,
+				913DB5C624A3650C009BEC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4E51385429473DD8006AD2C6 /* Project object */;
+	rootObject = 913DB5AD24A36502009BEC46 /* Project object */;
 }
