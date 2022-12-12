@@ -18,7 +18,9 @@ internal struct NearbyView: View
     @State private var backgroundGradient = [ Color.yellow, Color.green ]
     
     private let farColors = [ Color.yellow, Color.green ]
+    
     private let mediumColors = [ Color.pink, Color.orange ]
+    
     private let closeColors = [ Color.red, Color.purple ]
     
     internal var body: some View
