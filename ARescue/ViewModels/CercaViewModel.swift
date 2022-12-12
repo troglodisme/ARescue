@@ -304,10 +304,10 @@ extension CercaViewModel: MCSessionDelegate
                     self.isConnectionLost = true
                     
                 case .connecting:
-                    self.peerName = "Hola ¿Quién eres? 👋"
+                    self.peerName = "Finding Nearby Emergency Equipment"
                     
                 @unknown default:
-                    fatalError("Ha aparecido un estado nuevo de la enumeración. Ni idea lo que hacer.")
+                    fatalError("A new state of the enumeration has appeared. I have no idea what to do.")
             }
         }
     }
@@ -323,7 +323,7 @@ extension CercaViewModel: MCSessionDelegate
         
         guard let discoveryToken = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NIDiscoveryToken.self, from: data) else
         {
-            fatalError("No se ha podido leer el token del otro dispositivo")
+            fatalError("Failed to read the token from the other device.")
         }
         
         // Creamos la configuración...
@@ -393,7 +393,9 @@ extension CercaViewModel: MCNearbyServiceBrowserDelegate
         {
             return
         }
+        
         peersCount = multipeerSession.connectedPeers.count
+        
         browser.invitePeer(peerID, to: multipeerSession, withContext: nil, timeout: 10)
         
     }
