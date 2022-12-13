@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-internal struct ErrorView: View {
+struct ErrorView: View {
     
-    internal var body: some View {
+    var body: some View {
         
         VStack(alignment: .center, spacing: 8) {
             Spacer()

@@ -12,58 +12,37 @@ import MultipeerConnectivity
 import Combine
 import Foundation
 
-//class ViewController: UIViewController, NISessionDelegate {
-
     
-internal class ViewController: NSObject, ObservableObject {
-    
-    ///
-    @Published internal var invitationClosed = false
-    ///
-    @Published internal private(set) var peerName = ""
+class ViewController: NSObject, ObservableObject {
     
     //Variable added to  add extra description in the nearby view
-    @Published internal private(set) var peerDescription = ""
+    @Published  private(set) var peerDescription = ""
     
-    ///
-    @Published internal private(set) var distanceToPeer: Float?
-    ///
-    @Published internal private(set) var isDirectionAvailable = false
-    ///
-    @Published internal private(set) var directionAngle = 0.0
-    ///
-    @Published internal private(set) var isConnectionLost = false
+    @Published  var invitationClosed = false
+    @Published  private(set) var peerName = ""
     
-    //
+    @Published  private(set) var distanceToPeer: Float?
+    @Published  private(set) var isDirectionAvailable = false
+    @Published  private(set) var directionAngle = 0.0
+    @Published  private(set) var isConnectionLost = false
+        
     @Published var peersCount: Int?
     
-    ///
     private var nearbySession: NISession?
-    
-    ///
     private let serviceIdentity: String
-    ///
     private var multipeerSession: MCSession?
-    ///
     private var peer: MCPeerID?
-    ///
     private var peerToken: NIDiscoveryToken?
-    ///
     private var multipeerAdvertiser: MCNearbyServiceAdvertiser?
-    ///
     private var multipeerBrowser: MCNearbyServiceBrowser?
-    ///
     private var maxPeersInSession = 3
-    ///
     private var sharedTokenWithPeer = false
     
-    ///
     internal static var nearbySessionAvailable: Bool {
         return NISession.isSupported  //deprecated 16.0?
     }
     
-    
-    
+
     /**
      We start the `NearbyInteraction` sessions and from `MultipeerConnectivity`
      */
@@ -225,9 +204,12 @@ extension ViewController: NISessionDelegate {
         
     }
     
+
+    
     /// New distance and direction data
     func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) -> Void {
-        print(nearbyObjects)
+        
+//        print(nearbyObjects)
         
         guard let nearbyObject = nearbyObjects.first else {
             return
@@ -239,7 +221,10 @@ extension ViewController: NISessionDelegate {
             
             self.isDirectionAvailable = true
             self.directionAngle = Double(direction.x)
-            //            self.directionAngle = direction.x > 0.0 ? 90.0 : -90.0
+            
+            print(directionAngle)
+//            self.directionAngle = direction.x > 0.0 ? 90.0 : -90.0
+            
         }
         
         else {
@@ -393,3 +378,5 @@ extension ViewController: MCNearbyServiceBrowserDelegate {
         
     }
 }
+
+
