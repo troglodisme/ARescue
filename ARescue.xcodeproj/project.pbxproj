@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E03ED6429489F690074F8B6 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03ED6329489F690074F8B6 /* NavigationView.swift */; };
+		4E03ED682948B3620074F8B6 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03ED672948B3620074F8B6 /* ArrowView.swift */; };
 		4E517C8E2947298E00B7D035 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9162EEDA24A38CE7005D7F0B /* MultipeerConnectivity.framework */; };
 		4E517C912947299000B7D035 /* NearbyInteraction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913DB5C824A36523009BEC46 /* NearbyInteraction.framework */; };
 		913DB5B924A36502009BEC46 /* ARescue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913DB5B824A36502009BEC46 /* ARescue.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E03ED6329489F690074F8B6 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		4E03ED672948B3620074F8B6 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 		913DB5B524A36502009BEC46 /* ARescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913DB5B824A36502009BEC46 /* ARescue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARescue.swift; sourceTree = "<group>"; };
 		913DB5BA24A36502009BEC46 /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				913DB5BA24A36502009BEC46 /* NearbyView.swift */,
+				4E03ED672948B3620074F8B6 /* ArrowView.swift */,
+				4E03ED6329489F690074F8B6 /* NavigationView.swift */,
 				9162EED624A385A5005D7F0B /* ErrorView.swift */,
 			);
 			path = Views;
@@ -190,6 +196,8 @@
 			files = (
 				913DB5BB24A36502009BEC46 /* NearbyView.swift in Sources */,
 				913DB5B924A36502009BEC46 /* ARescue.swift in Sources */,
+				4E03ED682948B3620074F8B6 /* ArrowView.swift in Sources */,
+				4E03ED6429489F690074F8B6 /* NavigationView.swift in Sources */,
 				9162EED524A38447005D7F0B /* ViewController.swift in Sources */,
 				9162EED724A385A5005D7F0B /* ErrorView.swift in Sources */,
 			);

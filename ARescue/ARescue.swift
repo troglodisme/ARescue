@@ -15,6 +15,7 @@ struct ARescue: App {
             
             if ViewController.nearbySessionAvailable {
                 NearbyView()
+//                NavigationView()
             }
             else {
                 ErrorView()
