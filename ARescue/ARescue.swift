@@ -10,13 +10,13 @@ import SwiftUI
 @main
 struct ARescue: App {
     var body: some Scene {
+        
         WindowGroup {
-            if CercaViewModel.nearbySessionAvailable
-            {
+            
+            if ViewController.nearbySessionAvailable {
                 NearbyView()
             }
-            else
-            {
+            else {
                 ErrorView()
             }
         }

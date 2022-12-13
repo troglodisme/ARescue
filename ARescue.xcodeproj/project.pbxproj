@@ -13,7 +13,7 @@
 		913DB5BB24A36502009BEC46 /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913DB5BA24A36502009BEC46 /* NearbyView.swift */; };
 		913DB5BD24A3650C009BEC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913DB5BC24A3650C009BEC46 /* Assets.xcassets */; };
 		913DB5C024A3650C009BEC46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913DB5BF24A3650C009BEC46 /* Preview Assets.xcassets */; };
-		9162EED524A38447005D7F0B /* CercaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162EED424A38446005D7F0B /* CercaViewModel.swift */; };
+		9162EED524A38447005D7F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162EED424A38446005D7F0B /* ViewController.swift */; };
 		9162EED724A385A5005D7F0B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162EED624A385A5005D7F0B /* ErrorView.swift */; };
 		9162EED924A386B6005D7F0B /* UserInterface.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9162EED824A386B6005D7F0B /* UserInterface.xcassets */; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 		913DB5BF24A3650C009BEC46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		913DB5C124A3650C009BEC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913DB5C824A36523009BEC46 /* NearbyInteraction.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NearbyInteraction.framework; path = System/Library/Frameworks/NearbyInteraction.framework; sourceTree = SDKROOT; };
-		9162EED424A38446005D7F0B /* CercaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CercaViewModel.swift; sourceTree = "<group>"; };
+		9162EED424A38446005D7F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9162EED624A385A5005D7F0B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		9162EED824A386B6005D7F0B /* UserInterface.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInterface.xcassets; sourceTree = "<group>"; };
 		9162EEDA24A38CE7005D7F0B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
@@ -95,7 +95,7 @@
 		9162EED124A383C1005D7F0B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				9162EED424A38446005D7F0B /* CercaViewModel.swift */,
+				9162EED424A38446005D7F0B /* ViewController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 			files = (
 				913DB5BB24A36502009BEC46 /* NearbyView.swift in Sources */,
 				913DB5B924A36502009BEC46 /* ARescue.swift in Sources */,
-				9162EED524A38447005D7F0B /* CercaViewModel.swift in Sources */,
+				9162EED524A38447005D7F0B /* ViewController.swift in Sources */,
 				9162EED724A385A5005D7F0B /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

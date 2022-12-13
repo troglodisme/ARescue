@@ -24,7 +24,7 @@
 	<string>dsfghhgfcghjghj</string>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>_cerca._tcp</string>
+		<string>_ARescue._tcp</string>
 	</array>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>dfghjhgfghgf</string>
