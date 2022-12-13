@@ -20,7 +20,7 @@ struct NearbyView: View {
     
     private let mediumColors = [ Color.orange, Color.orange ]
     
-    private let closeColors = [ Color.green, Color.green ]
+    private let closeColors = [ Color.yellow, Color.green ]
     
     internal var body: some View {
         
