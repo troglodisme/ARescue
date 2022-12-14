@@ -25,7 +25,10 @@ class ViewController: NSObject, ObservableObject {
     @Published  private(set) var isDirectionAvailable = false
     @Published  private(set) var directionAngle = 0.0
     @Published  private(set) var isConnectionLost = false
-        
+    
+    @Published  private(set) var nearbyObjectsDebug = ""
+    
+    
     @Published var peersCount: Int?
     
     private var nearbySession: NISession?
@@ -143,7 +146,7 @@ class ViewController: NSObject, ObservableObject {
         self.stopMultipeerSession()
         
         self.multipeerAdvertiser?.startAdvertisingPeer()
-        self.multipeerBrowser?.startBrowsingForPeers()
+//        self.multipeerBrowser?.startBrowsingForPeers()
     }
     
     /**
@@ -209,7 +212,9 @@ extension ViewController: NISessionDelegate {
     /// New distance and direction data
     func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) -> Void {
         
-//        print(nearbyObjects)
+        print(nearbyObjects)
+        nearbyObjectsDebug = (nearbyObjects.debugDescription)
+
         
         guard let nearbyObject = nearbyObjects.first else {
             return
@@ -221,8 +226,7 @@ extension ViewController: NISessionDelegate {
             
             self.isDirectionAvailable = true
             self.directionAngle = Double(direction.x)
-            
-            print(directionAngle)
+//            print(directionAngle)
 //            self.directionAngle = direction.x > 0.0 ? 90.0 : -90.0
             
         }
@@ -368,7 +372,6 @@ extension ViewController: MCNearbyServiceBrowserDelegate {
               let identity = info["identity"],
               let multipeerSession = self.multipeerSession,
               (identity == self.serviceIdentity && multipeerSession.connectedPeers.count < self.maxPeersInSession)
-                                
         else {
             return
         }

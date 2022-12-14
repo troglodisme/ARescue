@@ -14,7 +14,7 @@ struct ARescue: App {
         WindowGroup {
             
             if ViewController.nearbySessionAvailable {
-                NearbyView()
+                ContentView()
 //                NavigationView()
             }
             else {

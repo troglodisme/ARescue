@@ -13,7 +13,6 @@ struct NearbyView: View {
     
     @State private var distance = "···"
 
-    
     @State private var backgroundGradient = [ Color.yellow, Color.green ]
 
     private let farColors = [ Color.red, Color.red ]
@@ -39,6 +38,12 @@ struct NearbyView: View {
                     self.distance = String(format: "%.2f m", updatedDistance)
                 })
             
+            VStack{
+                Text(self.viewModel.isDirectionAvailable ? "Direction Available" : "Direction Not Available")
+                Text(self.viewModel.isConnectionLost ? "No Connection" : "Connected")
+
+            }
+
             Spacer()
             
             //Display direction arrow and colour
@@ -57,16 +62,17 @@ struct NearbyView: View {
 //                .animation(.linear)
             
             Text(self.viewModel.peerName)
-                .font(.system(size: 20, weight: .semibold))
-                .foregroundColor(self.viewModel.isConnectionLost ? .secondary : .primary)
+                .font(.system(size: 25, weight: .semibold))
+                .foregroundColor(self.viewModel.isConnectionLost ? .red : .green)
             
             //trying to print the iphone token on top of the display name
 //            Text(self.viewModel.peerDescription)
 //                .font(.system(size: 20, weight: .semibold))
 //                .foregroundColor(self.viewModel.isConnectionLost ? .secondary : .primary)
-//            
+//
             
-
+//            Text(viewModel.nearbyObjectsDebug)
+//                .foregroundColor(.red)
             
 //            Text("Looking for...")
 //                .font(.system(size: 14))

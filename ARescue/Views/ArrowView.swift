@@ -30,7 +30,7 @@ struct ArrowView: View {
                 Circle()
                     .fill(LinearGradient(gradient: Gradient(colors: self.backgroundGradient),
                                          startPoint: .bottomTrailing, endPoint: .topLeading))
-                    .frame(width: 200, height: 200)
+                    .frame(width: 300, height: 300)
                     .animation(.linear(duration: 0.50))
                     .onReceive(self.viewModel.$distanceToPeer, perform: { updatedDistance in
 
@@ -48,14 +48,10 @@ struct ArrowView: View {
                                 self.backgroundGradient = closeColors
                         }
                     })
-
+                
                 Image(systemName: "arrow.up")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 120, height: 120)
-                    .foregroundColor(.white)
+                    .font(.system(size: 192, weight: .bold))
                     .shadow(radius: 8)
-//                    .rotationEffect(.degrees(self.viewModel.directionAngle))
                     .rotationEffect(.degrees(rad2deg(viewModel.directionAngle)))
                     .opacity(self.viewModel.isDirectionAvailable ? 1.0 : 0.10)
                     .animation(.linear)
