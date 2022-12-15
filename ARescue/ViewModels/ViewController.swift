@@ -146,7 +146,7 @@ class ViewController: NSObject, ObservableObject {
         self.stopMultipeerSession()
         
         self.multipeerAdvertiser?.startAdvertisingPeer()
-//        self.multipeerBrowser?.startBrowsingForPeers()
+        self.multipeerBrowser?.startBrowsingForPeers()
     }
     
     /**

@@ -16,13 +16,18 @@ struct ListView: View {
                     List {
                         Section {
                             HStack {
-                                Image("Defibrillator")
-                                    .resizable()
-                                    .frame(width: 80, height: 80)
-                                    .aspectRatio(contentMode: .fit)
-                                Text(" ")
-                                Text("DEFIBRILLATOR")
-                                    .fontWeight(.medium)
+                                NavigationLink {
+                                    NearbyView()
+                                } label: {
+                                    Image("Defibrillator")
+                                        .resizable()
+                                        .frame(width: 80, height: 80)
+                                        .aspectRatio(contentMode: .fit)
+                                    Text(" ")
+                                    Text("DEFIBRILLATOR")
+                                        .fontWeight(.medium)
+                                }
+
                             } // End HStack defibrillator
                             
                             HStack {
@@ -34,36 +39,29 @@ struct ListView: View {
                                 Text("FIRST AID KIT")
                                     .fontWeight(.medium)
                             } // End HStack firstaidkit
+                            
+                            HStack {
+                                Image("Fire Extinguisher")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 80, height: 80)
+                                Text(" ")
+                                Text("FIRE EXTINGUISHER")
+                                    .fontWeight(.medium)
+                            } // End HStack fireextinguisher
+                            
+                            HStack {
+                                Image("Hydrant")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 80, height: 80)
+                                Text(" ")
+                                Text("HYDRANT")
+                                    .fontWeight(.medium)
+                            }
                         } header: {
                             Text("Near You")
                         }
-                        
-                        Section {
-                        
-                        HStack {
-                            Image("Fire Extinguisher")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 80, height: 80)
-                            Text(" ")
-                            Text("FIRE EXTINGUISHER")
-                                .fontWeight(.medium)
-                        } // End HStack fireextinguisher
-                        
-                        HStack {
-                            Image("Hydrant")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 80, height: 80)
-                            Text(" ")
-                            Text("HYDRANT")
-                                .fontWeight(.medium)
-                        } // End HStack hydrant
-                        } header: {
-                            Text("Unavailable")
-                        }
-                        
-                        
                     } // MARK: End List
                     .listStyle(.insetGrouped)
                     

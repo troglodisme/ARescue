@@ -14,8 +14,9 @@ struct ARescue: App {
         WindowGroup {
             
             if ViewController.nearbySessionAvailable {
-                ContentView()
+                //ContentView()
 //                NavigationView()
+                ListView()
             }
             else {
                 ErrorView()

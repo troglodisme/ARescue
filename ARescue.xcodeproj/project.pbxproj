@@ -20,6 +20,7 @@
 		9162EED524A38447005D7F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162EED424A38446005D7F0B /* ViewController.swift */; };
 		9162EED724A385A5005D7F0B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162EED624A385A5005D7F0B /* ErrorView.swift */; };
 		9162EED924A386B6005D7F0B /* UserInterface.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9162EED824A386B6005D7F0B /* UserInterface.xcassets */; };
+		DDC24FCE294B1E5B001FCA2B /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC24FCD294B1E5B001FCA2B /* Elements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9162EED624A385A5005D7F0B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		9162EED824A386B6005D7F0B /* UserInterface.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInterface.xcassets; sourceTree = "<group>"; };
 		9162EEDA24A38CE7005D7F0B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		DDC24FCD294B1E5B001FCA2B /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				4E49CA702949EF1C0019F7DC /* ContentView.swift */,
 				4E141527294A578B00AF447C /* ListView.swift */,
+				DDC24FCD294B1E5B001FCA2B /* Elements.swift */,
 				913DB5BA24A36502009BEC46 /* NearbyView.swift */,
 				4E03ED672948B3620074F8B6 /* ArrowView.swift */,
 				4E03ED6329489F690074F8B6 /* NavigationView.swift */,
@@ -205,6 +208,7 @@
 				913DB5B924A36502009BEC46 /* ARescue.swift in Sources */,
 				4E49CA712949EF1C0019F7DC /* ContentView.swift in Sources */,
 				4E03ED682948B3620074F8B6 /* ArrowView.swift in Sources */,
+				DDC24FCE294B1E5B001FCA2B /* Elements.swift in Sources */,
 				4E03ED6429489F690074F8B6 /* NavigationView.swift in Sources */,
 				9162EED524A38447005D7F0B /* ViewController.swift in Sources */,
 				9162EED724A385A5005D7F0B /* ErrorView.swift in Sources */,
@@ -337,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ARescue/Preview Content\"";
-				DEVELOPMENT_TEAM = J566499KXW;
+				DEVELOPMENT_TEAM = C4XSSD23UD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ARescue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -345,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.gomma.ARescue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fede.ARescue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ARescue/Preview Content\"";
-				DEVELOPMENT_TEAM = J566499KXW;
+				DEVELOPMENT_TEAM = C4XSSD23UD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ARescue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -367,7 +371,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.gomma.ARescue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fede.ARescue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
