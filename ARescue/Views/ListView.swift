@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ListView: View {
+    
+    @StateObject var elements = ModelElements()
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -15,49 +18,20 @@ struct ListView: View {
                 VStack {
                     List {
                         Section {
-                            HStack {
-                                NavigationLink {
-                                    NearbyView()
-                                } label: {
-                                    Image("Defibrillator")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                        .aspectRatio(contentMode: .fit)
-                                    Text(" ")
-                                    Text("Defibrillator")
-                                        .fontWeight(.medium)
+                            ForEach(elements.listOfElements) { element in
+                                HStack {
+                                    NavigationLink {
+                                        NearbyView()
+                                    } label: {
+                                        Image(element.imageName)
+                                            .resizable()
+                                            .frame(width: 80, height: 80)
+                                            .aspectRatio(contentMode: .fit)
+                                        
+                                        Text(element.name)
+                                            .fontWeight(.medium)
+                                    }
                                 }
-
-                            } // End HStack defibrillator
-                            
-                            HStack {
-                                Image("First Aid Kit")
-                                    .resizable()
-                                    .frame(width: 80, height: 80)
-                                    .aspectRatio(contentMode: .fit)
-                                Text(" ")
-                                Text("First Aid Kit")
-                                    .fontWeight(.medium)
-                            } // End HStack firstaidkit
-                            
-                            HStack {
-                                Image("Fire Extinguisher")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 80, height: 80)
-                                Text(" ")
-                                Text("Fire Extinguisher")
-                                    .fontWeight(.medium)
-                            } // End HStack fireextinguisher
-                            
-                            HStack {
-                                Image("Hydrant")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 80, height: 80)
-                                Text(" ")
-                                Text("Hydrant")
-                                    .fontWeight(.medium)
                             }
                         } header: {
                             Text("Near You")
@@ -73,9 +47,9 @@ struct ListView: View {
                             print("SOS Button Tapped")
                         } label: {
                             Text("SOS Call").font(.title).fontWeight(.bold).foregroundColor(.white)
-                        } .padding()
-                            .background(Color.red)
+                        }
                     }
+                    .padding(5)
 
                     
                 } // MARK: End VStack
