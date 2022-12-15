@@ -24,7 +24,7 @@ struct ListView: View {
                                         .frame(width: 80, height: 80)
                                         .aspectRatio(contentMode: .fit)
                                     Text(" ")
-                                    Text("DEFIBRILLATOR")
+                                    Text("Defibrillator")
                                         .fontWeight(.medium)
                                 }
 
@@ -36,7 +36,7 @@ struct ListView: View {
                                     .frame(width: 80, height: 80)
                                     .aspectRatio(contentMode: .fit)
                                 Text(" ")
-                                Text("FIRST AID KIT")
+                                Text("First Aid Kit")
                                     .fontWeight(.medium)
                             } // End HStack firstaidkit
                             
@@ -46,7 +46,7 @@ struct ListView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 80, height: 80)
                                 Text(" ")
-                                Text("FIRE EXTINGUISHER")
+                                Text("Fire Extinguisher")
                                     .fontWeight(.medium)
                             } // End HStack fireextinguisher
                             
@@ -56,7 +56,7 @@ struct ListView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 80, height: 80)
                                 Text(" ")
-                                Text("HYDRANT")
+                                Text("Hydrant")
                                     .fontWeight(.medium)
                             }
                         } header: {
@@ -65,7 +65,8 @@ struct ListView: View {
                     } // MARK: End List
                     .listStyle(.insetGrouped)
                     
-                    .navigationTitle("Needed Equipment")
+                    .navigationTitle("Safety Equipment")
+                    
                     
                     VStack {
                         Button {
