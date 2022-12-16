@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-internal struct ErrorView: View
-{
-    internal var body: some View
-    {
-        VStack(alignment: .center, spacing: 8)
-        {
+struct ErrorView: View {
+    
+    var body: some View {
+        
+        VStack(alignment: .center, spacing: 8) {
             Spacer()
             
             Image("MeMac")
